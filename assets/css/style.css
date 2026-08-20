@@ -119,6 +119,11 @@ body {
     justify-content: space-between;
 }
 
+.header__container a {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
     height: 40px;
 }
@@ -187,8 +192,6 @@ body {
     align-items: center;
 
     overflow: hidden;
-
-    padding-top: 85px;
 }
 
 /* IMAGEM */
@@ -234,18 +237,16 @@ body {
 
 .hero__container {
 
+    padding-top: 35px;
+
     position: relative;
 
     z-index: 2;
-
-    width: min(1200px, calc(100% - 40px));
 
     margin: 0 auto;
 
     display: flex;
     align-items: center;
-
-    min-height: calc(100vh - 85px);
 }
 
 .hero__content {
@@ -402,7 +403,8 @@ body {
 ======================================== */
 
 section {
-    padding: 35px 0;
+    scroll-margin-top: 20px;
+    padding: 30px 0;
 }
 
 /* ========================================
@@ -481,6 +483,20 @@ section {
 .contact-card {
 
     text-decoration: none;
+}
+
+/* ========================================
+   SERVIÇOS
+======================================== */
+
+.servicos__grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 25px;
 }
 
 /* ========================================
@@ -839,8 +855,7 @@ section {
 @media (max-width: 768px) {
 
     .hero {
-
-        min-height: 100svh;
+        min-height: 100vh;
     }
 
     .hero__overlay {
@@ -853,7 +868,7 @@ section {
 
     .hero__title {
 
-        font-size: clamp(3rem, 14vw, 4.5rem);
+        font-size: 2.5rem;
 
         letter-spacing: -1px;
     }
