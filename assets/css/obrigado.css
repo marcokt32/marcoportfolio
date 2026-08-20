@@ -1,0 +1,634 @@
+/* ========================================
+   RESET BÁSICO
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg,
+            #08111f 0%,
+            #0d1728 50%,
+            #111c30 100%);
+
+    color: #ffffff;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ========================================
+   VARIÁVEIS
+======================================== */
+
+:root {
+
+    --blue-dark: #071522;
+
+    --blue-deep: #0b1e30;
+
+    --blue: #1689d8;
+
+    --blue-light: #7dd3fc;
+
+    --blue-soft: #b9e7ff;
+
+    --white: #ffffff;
+
+    --text: #dceaf5;
+
+    --text-muted: #8fa8bb;
+
+    --border: rgba(125, 211, 252, .18);
+
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family: "Barlow Semi Condensed", sans-serif;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #12314a 0%,
+            var(--blue-deep) 45%,
+            var(--blue-dark) 100%
+        );
+
+    color: var(--text);
+
+}
+
+
+/* ========================================
+   CONTAINER PRINCIPAL
+======================================== */
+
+.thank-you {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 60px 20px;
+
+    overflow: hidden;
+
+}
+
+
+/* ========================================
+   CONTEÚDO
+======================================== */
+
+.thank-you__content {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 680px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+/* ========================================
+   LOGO
+======================================== */
+
+.thank-you__logo {
+
+    display: inline-flex;
+
+    margin-bottom: 45px;
+
+    opacity: .9;
+
+    transition: .3s ease;
+
+}
+
+.thank-you__logo:hover {
+
+    opacity: 1;
+
+    transform: translateY(-2px);
+
+}
+
+.thank-you__logo img {
+
+    width: 110px;
+
+    height: auto;
+
+}
+
+
+/* ========================================
+   ÍCONE
+======================================== */
+
+.thank-you__icon {
+
+    width: 82px;
+
+    height: 82px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(125, 211, 252, .18),
+            rgba(22, 137, 216, .08)
+        );
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        0 0 35px rgba(22, 137, 216, .18),
+        inset 0 0 25px rgba(125, 211, 252, .05);
+
+}
+
+
+.thank-you__icon span {
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 2rem;
+
+    color: var(--blue-light);
+
+}
+
+
+/* ========================================
+   TAG
+======================================== */
+
+.thank-you__tag {
+
+    margin-bottom: 18px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: .72rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    color: var(--blue-light);
+
+}
+
+
+/* ========================================
+   TÍTULO
+======================================== */
+
+.thank-you__title {
+
+    margin: 0 0 25px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 3.5rem;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+
+    color: var(--white);
+
+}
+
+
+.thank-you__title span {
+
+    display: inline-block;
+
+    color: var(--blue-light);
+
+}
+
+
+/* ========================================
+   DESCRIÇÃO
+======================================== */
+
+.thank-you__description {
+
+    max-width: 570px;
+
+    margin: 0 0 35px;
+
+    font-size: 1.15rem;
+
+    line-height: 1.7;
+
+    color: var(--text-muted);
+
+}
+
+
+/* ========================================
+   CARD INFORMATIVO
+======================================== */
+
+.thank-you__info {
+
+    width: 100%;
+
+    max-width: 530px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 20px 24px;
+
+    margin-bottom: 35px;
+
+    box-sizing: border-box;
+
+    text-align: left;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.06),
+            rgba(255,255,255,.025)
+        );
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    backdrop-filter: blur(15px);
+
+}
+
+
+.thank-you__info-icon {
+
+    flex-shrink: 0;
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(22, 137, 216, .12);
+
+    font-size: 1.3rem;
+
+}
+
+
+.thank-you__info strong {
+
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: .9rem;
+
+    color: var(--white);
+
+}
+
+
+.thank-you__info p {
+
+    margin: 0;
+
+    font-size: .95rem;
+
+    line-height: 1.5;
+
+    color: var(--text-muted);
+
+}
+
+
+/* ========================================
+   BOTÕES
+======================================== */
+
+.thank-you__actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.thank-you__button {
+
+    min-width: 210px;
+
+    padding: 14px 22px;
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 12px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: .85rem;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+
+}
+
+
+.thank-you__button--primary {
+
+    color: #04111c;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue-light),
+            var(--blue)
+        );
+
+    box-shadow:
+        0 8px 25px rgba(22, 137, 216, .2);
+
+}
+
+
+.thank-you__button--primary:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 35px rgba(22, 137, 216, .3);
+
+}
+
+
+.thank-you__button--primary span {
+
+    font-size: 1.2rem;
+
+}
+
+
+.thank-you__button--secondary {
+
+    color: var(--text);
+
+    background: rgba(255,255,255,.04);
+
+    border: 1px solid var(--border);
+
+}
+
+
+.thank-you__button--secondary:hover {
+
+    color: var(--white);
+
+    background: rgba(255,255,255,.08);
+
+    border-color: rgba(125, 211, 252, .35);
+
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.thank-you__footer {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 55px;
+
+    font-size: .8rem;
+
+    color: #60798c;
+
+}
+
+
+.thank-you__separator {
+
+    color: var(--blue);
+
+}
+
+
+/* ========================================
+   EFEITOS DE FUNDO
+======================================== */
+
+.thank-you__glow {
+
+    position: absolute;
+
+    width: 450px;
+
+    height: 450px;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: .12;
+
+    pointer-events: none;
+
+}
+
+
+.thank-you__glow--one {
+
+    top: -200px;
+
+    left: -200px;
+
+    background: var(--blue);
+
+}
+
+
+.thank-you__glow--two {
+
+    right: -200px;
+
+    bottom: -200px;
+
+    background: var(--blue-light);
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .thank-you {
+
+        padding: 40px 18px;
+
+    }
+
+
+    .thank-you__logo {
+
+        margin-bottom: 35px;
+
+    }
+
+
+    .thank-you__icon {
+
+        width: 70px;
+
+        height: 70px;
+
+    }
+
+
+    .thank-you__title {
+
+        font-size: 3rem;
+
+    }
+
+
+    .thank-you__description {
+
+        font-size: 1.05rem;
+
+    }
+
+
+    .thank-you__info {
+
+        align-items: flex-start;
+
+        padding: 18px;
+
+    }
+
+
+    .thank-you__actions {
+
+        width: 100%;
+
+        flex-direction: column;
+
+    }
+
+
+    .thank-you__button {
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+    }
+
+
+    .thank-you__footer {
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        margin-top: 40px;
+
+    }
+
+
+    .thank-you__separator {
+
+        display: none;
+
+    }
+
+}
