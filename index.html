@@ -10,169 +10,487 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&family=Montserrat:wght@500&family=Playfair+Display:wght@800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body id="topo">
+<body>
 
-    <header class="cabecalho">
-        <img class="cabecalho__logo" src="./assets/img/Logo.svg" alt="Logo do desenvolvedor">
+    <!-- HEADER -->
+    <header class="header">
 
-        <nav>
-            <ul class="cabecalho__lista">
-                <li><a class="cabecalho__link" href="#banner">Principal</a></li>
-                <li><a class="cabecalho__link" href="#competencias">Competências</a></li>
-                <li><a class="cabecalho__link" href="#projetos">Projetos</a></li>
-                <li><a class="cabecalho__link" href="#formacoes">Formações</a></li>
-                <li><a class="cabecalho__link" href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container header__container">
+
+            <a href="#" class="logo">
+                <img src="assets/img/logo.png" alt="Logo">
+            </a>
+
+            <nav class="nav">
+
+                <ul class="nav__list">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#competencias">Competências</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#formacoes">Formação</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+            </nav>
+
+            <a href="#contato" class="header__action">
+                Entrar em Contato
+            </a>
+
+        </div>
+
     </header>
 
     <main>
 
         <!-- HERO -->
-        <section id="banner" class="banner">
-            <div class="banner__left">
-                <h1 class="banner__apresentacao--titulo">Desenvolvedor</h1>
-                <h2 class="banner__apresentacao--subtitulo">UX/UI Design</h2>
-                <h2 class="banner__apresentacao--nome">Marco Quintela</h2>
+        <section id="home" class="hero">
 
-                <ul class="skills__lista">
-                    <li>
-                        <a href="https://github.com/marcokt32">
-                            <img src="./assets/img/github.svg" alt="GitHub" width="30">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/marcoquintela/">
-                            <img src="./assets/img/linkedin.svg" alt="LinkedIn" width="30">
-                        </a>
-                    </li>
-                </ul>
+            <div class="hero__background">
+                <img src="./assets/img/hero/hero.png" alt="image do banner">
             </div>
 
-            <div class="banner__right">
-                <p class="banner__resumo--titulo">
-                    Profissional com formação em logística e desenvolvimento web.
-                </p>
-                <strong class="banner__resumo--strong">Meu objetivo é trazer a solução até você.</strong>
+            <div class="hero__overlay"></div>
+
+            <div class="container hero__container">
+
+                <div class="hero__content">
+
+                    <span class="hero__tag">
+                        Desenvolvedor Web • UX/UI
+                    </span>
+
+                    <h1 class="hero__title">
+                        Soluções digitais
+                        <span>para seu negócio.</span>
+                    </h1>
+
+                    <p class="hero__text">
+                        Desenvolvedor focado em experiências intuitivas,
+                        aplicações web responsivas e automação de processos.
+                    </p>
+
+                    <div class="hero__buttons">
+
+                        <a href="#projetos" class="btn btn--primary">
+                            Ver Projetos
+                        </a>
+
+                        <a href="#contato" class="btn btn--secondary">
+                            Entrar em contato
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
+
         </section>
 
         <!-- COMPETÊNCIAS -->
-        <section id="competencias" class="competencias fade-in">
+        <section id="competencias" class="competencias">
 
-            <h2 class="competencias__titulo">Competências</h2>
-            <div class="competencias__div">
-                <div class="competencias__lista">
+            <div class="container">
 
-                    <div class="competencias__item">
-                        <h3>Logística</h3>
-                        <p>
-                            Com a formação em andamento e experiência com rotinas de gestão e ERP, busco entender as
-                            individualidades dos processos dentro da realidade de cada operação.
-                            Buscando usar da melhor forma possível serviços de gerenciamento e integração, tendo em
-                            vista o
-                            cenário atual do mercado, onde existem milhares de soluções digitais.
-                        </p>
-                    </div>
+                <h2 class="section-title">
+                    Competências
+                </h2>
 
-                    <div class="competencias__item">
+                <div class="competencias__grid">
+
+                    <article class="card">
                         <h3>Desenvolvimento Web</h3>
-                        <p>
-                            Criação de sites, portfolios e manutenção de hospedagem.
-                            Posso criar um site apenas para apresentação (Como um cartão de visita, ou uma galeria de
-                            fotos)
-                            ou uma aplicação web com funcionalidades comerciais, sendo atrativo e de fácil compreensão
-                            por
-                            seus usuários.
-                        </p>
-                    </div>
+                        <p>Sites modernos e responsivos.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>UX/UI Design</h3>
+                        <p>Interfaces intuitivas e funcionais.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Logística</h3>
+                        <p>Experiência operacional e estratégica.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Automação</h3>
+                        <p>Otimização de processos empresariais.</p>
+                    </article>
+
                 </div>
 
-                <div class="skills__lista">
-                    <div class="skills__item skills__html">HTML</div>
-                    <div class="skills__item skills__css">CSS</div>
-                    <div class="skills__item skills__js">JavaScript</div>
-                    <div class="skills__item skills__vscode">VS Code</div>
-                    <div class="skills__item skills__excel">Excel</div>
-                    <div class="skills__item skills__nfe">NF-e</div>
+            </div>
+
+        </section>
+
+        <!-- TECNOLOGIAS -->
+        <section class="tecnologias">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Tecnologias
+                </h2>
+
+                <div class="tech-grid">
+
+                    <div class="tech"><img src="assets/img/icons/html5-icon.svg" alt="html5">HTML</div>
+                    <div class="tech"><img src="assets/img/icons/css3-icon.svg" alt="css3">CSS</div>
+                    <div class="tech"><img src="assets/img/icons/js-icon.svg" alt="JavaScript">JavaScript</div>
+                    <div class="tech"><img src="assets/img/icons/react-icon.png" alt="React">React</div>
+                    <div class="tech"><img src="assets/img/icons/firebase-icon.png" alt="FireBase">Firebase</div>
+                    <div class="tech"><img src="assets/img/icons/github-icon.svg" alt="Git">Git</div>
+                    <div class="tech"><img src="assets/img/icons/vscode-icon.svg" alt="VsCode">VS Code</div>
+                    <div class="tech"><img src="assets/img/icons/excel-icon.svg" alt="Excel">Excel</div>
+
                 </div>
+
             </div>
 
         </section>
 
         <!-- PROJETOS -->
-        <section id="projetos" class="projetos fade-in">
+        <section id="projetos" class="projetos">
 
-            <h2 class="projetos__titulo">Projetos</h2>
+            <div class="container">
 
-            <div class="projetos__lista">
+                <h2 class="section-title">
+                    Projetos
+                </h2>
 
-                <a href="https://marcokt32.github.io/GitRepository/" class="projetos__item">
-                    <div class="projetos__resumo">
-                        <h3>Decodificador</h3>
-                        <p>Projeto com HTML, CSS e JS.</p>
+                <div class="carousel">
+
+                    <button class="carousel__btn prev">
+                        ◀
+                    </button>
+
+                    <div class="carousel__track">
+
+                        <article class="project-card">
+
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/oenforcado.png" alt="oenforcado.com">
+                            </div>
+
+                            <div class="project-card__content">
+
+                                <h3>O Enforcado</h3>
+
+                                <p>
+                                    Um site criado com foco em lógica JavaScript, funciona como uma aplicação web que
+                                    processa as letras e palavras em tempo real;
+                                </p>
+
+                                <a href="oenforcado.com">
+                                    Visualizar
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-card">
+
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/fretecometa.png" alt="frete cometa">
+                            </div>
+
+                            <div class="project-card__content">
+
+                                <h3>Frete Cometa</h3>
+
+                                <p>
+                                    Landing Page voltado para prestação de serviços de frete, com redirecionamento para
+                                    contato via WhatsApp.
+                                </p>
+
+                                <a href="https://marcokt32.github.io/fretecometa/">
+                                    Visualizar
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-card">
+
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/fruitgift.png" alt="fruit gift">
+                            </div>
+
+                            <div class="project-card__content">
+
+                                <h3>Fruit Gift</h3>
+
+                                <p>
+                                    Jogo de plataforma 2D desenvolvido para Android com linguagem C#, disponível para
+                                    download na Google Play já alcançou mais de 500 downloads
+                                </p>
+
+                                <a
+                                    href="https://play.google.com/store/apps/details?id=com.godotengine.fruitgift&hl=pt_BR">
+                                    Visualizar
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-card">
+
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/jumpball.png" alt="jumpball">
+                            </div>
+
+                            <div class="project-card__content">
+
+                                <h3>Jump Ball</h3>
+
+                                <p>
+                                    Jogo casual desenvolvido para Android e disponibilizado na Google Play.
+                                </p>
+
+                                <a
+                                    href="https://play.google.com/store/apps/details?id=org.godotengine.dmjumpball&hl=pt_BR">
+                                    Visualizar
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-card">
+
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/convite1.png" alt="convite casamento">
+                            </div>
+
+                            <div class="project-card__content">
+
+                                <h3>Convites</h3>
+
+                                <p>
+                                    Convite de casamento com confirmação e lista de presentes online hosteada pelo
+                                    Firebase.
+                                </p>
+
+                                <a href="https://convite-c4676.web.app/">
+                                    Visualizar
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-card">
+
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/convite2.png" alt="convite aniversário">
+                            </div>
+
+                            <div class="project-card__content">
+
+                                <h3>Convites</h3>
+
+                                <p>
+                                    Convite de aniversário com confirmação e lista de presentes online hosteada pelo
+                                    Firebase.
+                                </p>
+
+                                <a href="https://seuconvite-r.web.app/">
+                                    Visualizar
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-card">
+
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/organizador.png" alt="convite aniversário">
+                            </div>
+
+                            <div class="project-card__content">
+
+                                <h3>Organizador Web</h3>
+
+                                <p>
+                                    Aplicação Webpara genrenciamento de projetos com funcionalidades como,
+                                    compartilhamento de dashboard e autenticação com google.
+                                </p>
+
+                                <a href="https://scrum-board-40460.web.app/">
+                                    Visualizar
+                                </a>
+
+                            </div>
+
+                        </article>
+
+                        <article class="project-card">
+
+                            <div class="project-card__image">
+                                <img src="assets/img/projects/simplificador.png" alt="simplificador">
+                            </div>
+
+                            <div class="project-card__content">
+
+                                <h3>Simplificador de planilhas</h3>
+
+                                <p>
+                                    Uma aplicação web desenvolvida como uma ferramenta de simplificação de planilha de
+                                    vendas exportada do Mercado Livre para automação do processo de expedição.
+                                </p>
+
+                                <a href="https://simplificador.onrender.com/">
+                                    Visualizar
+                                </a>
+
+                            </div>
+
+                        </article>
+
                     </div>
-                </a>
 
-                <a href="https://marcokt32.github.io/Jogo-da-Forca" class="projetos__item">
-                    <div class="projetos__resumo">
-                        <h3>Jogo da Forca</h3>
-                        <p>Foco em lógica e interação.</p>
+                    <div class="carousel__dots">
+                        <button class="dot active"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
+                        <button class="dot"></button>
                     </div>
-                </a>
 
-                <a href="https://cakecalc.com/login.php" class="projetos__item">
-                    <div class="projetos__resumo">
-                        <h3>CakeCalc</h3>
-                        <p>Projeto pessoal (descontinuado).</p>
-                    </div>
-                </a>
+                    <button class="carousel__btn next">
+                        ▶
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FORMAÇÃO -->
+        <section id="formacoes" class="formacoes">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Formação
+                </h2>
+
+                <div class="formacoes__grid">
+
+                    <article class="formation-card">
+                        <h3>MBA</h3>
+                        <p>Busco como especialização para a minha área de atuação em logística a Liderança e Gestão de
+                            Pessoas</p>
+                    </article>
+
+                    <article class="formation-card">
+                        <h3>Tecnólogo</h3>
+                        <p>Formado em 2025 pela instituição de ensino superior Estácio, venho trabalhando na área e
+                            aplicando meus conehcimentos em técnologia para trazer soluções para qos desafios diários.
+                        </p>
+                    </article>
+
+                    <article class="formation-card">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Minha paixão por desenvolvimento e tecnologia me levou ao estudo de HTML, CSS e JavaScript
+                            assim como outras linguagens e tecnologia.</p>
+                    </article>
+
+                </div>
 
             </div>
 
         </section>
 
         <!-- CONTATO -->
-        <section id="contato" class="contato fade-in">
+        <section id="contato" class="contato">
 
-            <h2>Contato</h2>
+            <div class="container">
 
-            <form class="contato__formulario">
-                <input class="contato__formulario--campo" type="text" placeholder="Nome">
-                <input class="contato__formulario--campo" type="email" placeholder="Email">
-                <textarea class="contato__formulario--texto" placeholder="Mensagem"></textarea>
+                <h2 class="section-title">
+                    Contato
+                </h2>
 
-                <button class="contato__formulario--botao" type="submit">
-                    Enviar
-                </button>
-            </form>
+                <div class="contato__cards">
+
+                    <a href="https://wa.me/5521965494558?text=Olá%20Marco!%20Encontrei%20seu%20portfólio%20e%20gostaria%20de%20obter%20mais%20informações%20sobre%20os%20serviços%20que%20você%20realiza.%20Poderia%20me%20apresentar%20as%20soluções%20disponíveis%20e%20como%20funciona%20o%20processo%20de%20contratação?"
+                        class="contact-card">
+                        <div class="title">
+                            <img src="assets/img/social-media/whatsapp-icon.png" alt="whatsapp-icon">
+                            <h3>WhatsApp</h3>
+                        </div>
+                        <p>Entre em contato diretamente comigo</p>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/marcoquintela/" class="contact-card">
+                        <div class="title">
+                            <img src="assets/img/social-media/linkedin-icon.png" alt="linkedin-icon">
+                            <h3>LinkedIn</h3>
+                        </div>
+                        <p>https://www.linkedin.com/in/marcoquintela/</p>
+                    </a>
+
+                    <a href="" class="contact-card">
+                        <div class="title">
+                            <img src="assets/img/social-media/comercial-icon.png" alt="linkedin-icon">
+                            <h3>Contato</h3>
+                        </div>
+                        <p>+55 (21) 96549-4558</p>
+                        <p>quintelamarco94@gmail.com</p>
+                    </a>
+
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
-    <footer class="rodape">
-        <p>© 2026 - Marco Quintela</p>
+    <!-- FOOTER -->
+    <footer class="footer">
 
-        <ul class="rodape__lista">
-            <li>
-                <a href="https://github.com/marcokt32">
-                    <img src="./assets/img/github.svg" width="25">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/marcoquintela/">
-                    <img src="./assets/img/linkedin.svg" width="25">
-                </a>
-            </li>
-        </ul>
+        <div class="container footer__container">
+
+            <div>
+                <h3>Marco Quintela</h3>
+                <p>
+                    Desenvolvimento Web, UX/UI e soluções digitais.
+                </p>
+            </div>
+
+            <nav class="footer__nav">
+
+                <a href="#home">Início</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+
+            </nav>
+
+            <div class="footer__copy">
+                © 2026 Marco Quintela.
+                Todos os direitos reservados.
+            </div>
+
+        </div>
+
     </footer>
 
 </body>
-<script src="./assets/js/animacoes.js"></script>
+<script src="./assets/js/header.js"></script>
+<script src="./assets/js/carousel.js"></script>
 
 </html>
