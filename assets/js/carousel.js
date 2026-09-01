@@ -1,11 +1,11 @@
-const track = document.querySelector(".carousel__track");
+const track = document.querySelector(".carousel-track");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
 const dots = document.querySelectorAll(".dot");
 
 const getScrollAmount = () => {
 
-    const card = track.querySelector(".project-card");
+    const card = track.querySelector(".phone-card");
 
     if (!card) return 350;
 
@@ -36,7 +36,7 @@ prevBtn?.addEventListener("click", () => {
 
 function updateDots() {
 
-    const cards = document.querySelectorAll(".project-card");
+    const cards = document.querySelectorAll(".phone-card");
 
     if (!cards.length || !dots.length) return;
 

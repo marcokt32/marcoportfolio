@@ -1,0 +1,173 @@
+/* ========================================
+   RESET BÁSICO
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg,
+            #08111f 0%,
+            #0d1728 50%,
+            #111c30 100%);
+
+    color: #ffffff;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* VARIÁVEIS */
+
+:root {
+
+    --primary: #2ea8ff;
+    --primary-light: #84d2ff;
+
+    --bg: #08111f;
+    --surface: #122038;
+    --surface-light: #1b2b47;
+
+    --text: #ffffff;
+    --text-secondary: #a7b6c8;
+
+    --border: rgba(255, 255, 255, .08);
+
+    --shadow:
+        0 15px 40px rgba(0, 0, 0, .35);
+
+    --radius: 18px;
+    --transition: .3s ease;
+}
+
+/* PADRÕES DE CONSTRUÇÃO */
+
+/* CONTAINER */
+
+.container {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+/* TITULO DE SECÃO */
+
+.section-title {
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+    position: relative;
+}
+
+.section-title::after {
+
+    content: "";
+
+    width: 80px;
+    height: 3px;
+
+    background: var(--primary);
+
+    display: block;
+
+    margin: 15px auto 0;
+}
+
+/* HEADER */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    backdrop-filter: blur(18px);
+
+    background: rgba(8, 17, 31, .75);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.header-container {
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container a {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-list {
+
+    display: flex;
+    align-items: center;
+
+    list-style: none;
+
+    gap: 35px;
+}
+
+.nav-list a {
+
+    text-decoration: none;
+
+    color: var(--text-secondary);
+
+    transition: var(--transition);
+}
+
+.nav-list a:hover {
+    color: var(--primary-light);
+}
+
+.header-action {
+
+    text-decoration: none;
+
+    color: white;
+
+    font-family: "Montserrat", sans-serif;
+
+    background: linear-gradient(135deg,
+            var(--primary),
+            #6fd0ff);
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    transition: var(--transition);
+}
+
+.header-action:hover {
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 0 20px rgba(46, 168, 255, .4);
+}

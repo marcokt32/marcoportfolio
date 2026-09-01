@@ -15,6 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500&family=Montserrat:wght@500&family=Playfair+Display:wght@800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10942914304"></script>
     <script>
@@ -31,7 +32,7 @@
     <!-- HEADER -->
     <header class="header">
 
-        <div class="container header__container">
+        <div class="container header-container">
 
             <a href="#" class="logo">
                 <img src="assets/img/logo.png" alt="Logo">
@@ -39,19 +40,16 @@
 
             <nav class="nav">
 
-                <ul class="nav__list">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#competencias">Competências</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#formacoes">Formação</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                <ul class="nav-list">
+                    <li><a href="#como-funciona">como funciona</a></li>
+                    <li><a href="#valores">valores</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </ul>
 
             </nav>
 
-            <a href="#contato" class="header__action">
-                Entrar em Contato
+            <a href="#projetos" class="header-action">
+                Ver projetos
             </a>
 
         </div>
@@ -63,150 +61,36 @@
         <!-- HERO -->
         <section id="home" class="hero">
 
-            <div class="hero__background">
+            <div class="hero-background">
                 <img src="./assets/img/hero/hero.png" alt="image do banner">
             </div>
 
-            <div class="hero__overlay"></div>
+            <div class="hero-overlay"></div>
 
-            <div class="container hero__container">
+            <div class="container hero-container">
 
-                <div class="hero__content">
+                <div class="hero-content">
 
-                    <span class="hero__tag">
-                        Desenvolvedor Web • UX/UI
+                    <span class="hero-tag">
+                        Preview grátis
                     </span>
 
-                    <h1 class="hero__title">
-                        Sites Profissionais e Automação de Processos
-                        <span>para aumentar sua produtividade</span>
+                    <h1 class="hero-title">
+                        Sua landing Page
+                        <span>entregue no mesmo dia</span>
                     </h1>
 
-                    <p class="hero__text">
-                        Criação de sites modernos, landing pages e soluções de automação
-                        para empresas que desejam melhorar sua presença digital e otimizar processos.
+                    <p class="hero-text">
+                        Me conte a sua ideia e nós vamos criar uma página completa para você!
                     </p>
 
-                    <div class="hero__buttons">
+                    <div class="hero-buttons">
 
                         <a href="#contato" class="btn btn--primary">
-                            Solicitar Orçamento
-                        </a>
-
-                        <a href="#projetos" class="btn btn--secondary">
-                            Ver Projetos
+                            Peça seu site agora!
                         </a>
 
                     </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- SERVIÇOS -->
-
-        <section id="servicos" class="servicos">
-
-            <div class="container">
-
-                <h2 class="section-title">
-                    Serviços
-                </h2>
-
-                <div class="servicos__grid">
-
-                    <article class="card">
-                        <h3>Criação de Sites</h3>
-                        <p>
-                            Sites institucionais modernos, responsivos e adaptados para desktop e celular.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Landing Pages</h3>
-                        <p>
-                            Páginas focadas em conversão para campanhas, anúncios e captação de clientes.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Automação de Processos</h3>
-                        <p>
-                            Soluções para reduzir tarefas repetitivas e aumentar a produtividade.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Manutenção</h3>
-                        <p>
-                            Atualização de conteúdo, correções e suporte técnico para seu site.
-                        </p>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- COMPETÊNCIAS -->
-        <section id="competencias" class="competencias">
-
-            <div class="container">
-
-                <h2 class="section-title">
-                    Competências
-                </h2>
-
-                <div class="competencias__grid">
-
-                    <article class="card">
-                        <h3>Desenvolvimento Web</h3>
-                        <p>Sites modernos e responsivos.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>UX/UI Design</h3>
-                        <p>Interfaces intuitivas e funcionais.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Logística</h3>
-                        <p>Experiência operacional e estratégica.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Automação</h3>
-                        <p>Otimização de processos empresariais.</p>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- TECNOLOGIAS -->
-        <section class="tecnologias">
-
-            <div class="container">
-
-                <h2 class="section-title">
-                    Tecnologias
-                </h2>
-
-                <div class="tech-grid">
-
-                    <div class="tech"><img src="assets/img/icons/html5-icon.svg" alt="html5">HTML</div>
-                    <div class="tech"><img src="assets/img/icons/css3-icon.svg" alt="css3">CSS</div>
-                    <div class="tech"><img src="assets/img/icons/js-icon.svg" alt="JavaScript">JavaScript</div>
-                    <div class="tech"><img src="assets/img/icons/react-icon.png" alt="React">React</div>
-                    <div class="tech"><img src="assets/img/icons/firebase-icon.png" alt="FireBase">Firebase</div>
-                    <div class="tech"><img src="assets/img/icons/github-icon.svg" alt="Git">Git</div>
-                    <div class="tech"><img src="assets/img/icons/vscode-icon.svg" alt="VsCode">VS Code</div>
-                    <div class="tech"><img src="assets/img/icons/vite-icon.png" alt="Vite">Vite</div>
 
                 </div>
 
@@ -219,48 +103,91 @@
 
             <div class="container">
 
+                <div class="section-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    <span>FEITO SOB MEDIDA</span>
+                    <span class="eyebrow-line"></span>
+                </div>
+
                 <h2 class="section-title">
-                    Projetos
+                    Sites como estes podem ser seu
                 </h2>
+
+                <p class="container-text">A partir de um resumo, estes modelos foram criados exclusivamente para cada
+                    cliente, de acordo com a sua necessidade.</p>
+                <p class="container-text">Role dentro de cada tela para ver o site completo</p>
 
                 <div class="carousel">
 
-                    <button class="carousel__btn prev">
+                    <button class="carousel-btn prev">
                         ◀
                     </button>
 
-                    <div class="carousel__track">
+                    <div class="carousel-track">
 
-                        <article class="project-card">
+                        <article class="phone-card">
 
-                            <div class="project-card__image">
-                                <img src="assets/img/projects/oenforcado.png" alt="oenforcado.com">
-                            </div>
+                            <span class="phone-camera"></span>
 
-                            <div class="project-card__content">
-
-                                <h3>O Enforcado</h3>
-
-                                <p>
-                                    Um site criado com foco em lógica JavaScript, funciona como uma aplicação web que
-                                    processa as letras e palavras em tempo real;
-                                </p>
-
-                                <a href="oenforcado.com">
-                                    Visualizar
+                            <div class="phone-screen">
+                                <a href="https://oenforcado.com">
+                                    <div class="phone-screen-image">
+                                        <img src="assets/img/projects/enforcado-example.png" alt="oenforcado.com">
+                                    </div>
                                 </a>
-
                             </div>
 
                         </article>
 
-                        <article class="project-card">
+                        <article class="phone-card">
 
-                            <div class="project-card__image">
+                            <span class="phone-camera"></span>
+
+                            <div class="phone-screen">
+                                <a href="https://fretecometa.com.br">
+                                    <div class="phone-screen-image">
+                                        <img src="assets/img/projects/fretecometa-example.png" alt="oenforcado.com">
+                                    </div>
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="phone-card">
+
+                            <span class="phone-camera"></span>
+
+                            <div class="phone-screen">
+                                <a href="https://convite-c4676.web.app/">
+                                    <div class="phone-screen-image">
+                                        <img src="assets/img/projects/convite1-example.png" alt="oenforcado.com">
+                                    </div>
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <article class="phone-card">
+
+                            <span class="phone-camera"></span>
+
+                            <div class="phone-screen">
+                                <a href="https://seuconvite-r.web.app/">
+                                    <div class="phone-screen-image">
+                                        <img src="assets/img/projects/convite2-example.png" alt="oenforcado.com">
+                                    </div>
+                                </a>
+                            </div>
+
+                        </article>
+
+                        <!--article class="project-card">
+
+                            <div class="project-card-image">
                                 <img src="assets/img/projects/fretecometa.png" alt="frete cometa">
                             </div>
 
-                            <div class="project-card__content">
+                            <div class="project-card-content">
 
                                 <h3>Frete Cometa</h3>
 
@@ -279,11 +206,11 @@
 
                         <article class="project-card">
 
-                            <div class="project-card__image">
+                            <div class="project-card-image">
                                 <img src="assets/img/projects/fruitgift.png" alt="fruit gift">
                             </div>
 
-                            <div class="project-card__content">
+                            <div class="project-card-content">
 
                                 <h3>Fruit Gift</h3>
 
@@ -303,11 +230,11 @@
 
                         <article class="project-card">
 
-                            <div class="project-card__image">
+                            <div class="project-card-image">
                                 <img src="assets/img/projects/jumpball.png" alt="jumpball">
                             </div>
 
-                            <div class="project-card__content">
+                            <div class="project-card-content">
 
                                 <h3>Jump Ball</h3>
 
@@ -326,11 +253,11 @@
 
                         <article class="project-card">
 
-                            <div class="project-card__image">
+                            <div class="project-card-image">
                                 <img src="assets/img/projects/convite1.png" alt="convite casamento">
                             </div>
 
-                            <div class="project-card__content">
+                            <div class="project-card-content">
 
                                 <h3>Convites</h3>
 
@@ -349,11 +276,11 @@
 
                         <article class="project-card">
 
-                            <div class="project-card__image">
+                            <div class="project-card-image">
                                 <img src="assets/img/projects/convite2.png" alt="convite aniversário">
                             </div>
 
-                            <div class="project-card__content">
+                            <div class="project-card-content">
 
                                 <h3>Convites</h3>
 
@@ -372,11 +299,11 @@
 
                         <article class="project-card">
 
-                            <div class="project-card__image">
+                            <div class="project-card-image">
                                 <img src="assets/img/projects/organizador.png" alt="convite aniversário">
                             </div>
 
-                            <div class="project-card__content">
+                            <div class="project-card-content">
 
                                 <h3>Organizador Web</h3>
 
@@ -395,11 +322,11 @@
 
                         <article class="project-card">
 
-                            <div class="project-card__image">
+                            <div class="project-card-image">
                                 <img src="assets/img/projects/simplificador.png" alt="simplificador">
                             </div>
 
-                            <div class="project-card__content">
+                            <div class="project-card-content">
 
                                 <h3>Simplificador de planilhas</h3>
 
@@ -414,11 +341,11 @@
 
                             </div>
 
-                        </article>
+                        </article-->
 
                     </div>
 
-                    <div class="carousel__dots">
+                    <div class="carousel-dots">
                         <button class="dot active"></button>
                         <button class="dot"></button>
                         <button class="dot"></button>
@@ -429,7 +356,7 @@
                         <button class="dot"></button>
                     </div>
 
-                    <button class="carousel__btn next">
+                    <button class="carousel-btn next">
                         ▶
                     </button>
 
@@ -439,35 +366,477 @@
 
         </section>
 
-        <!-- FORMAÇÃO -->
-        <section id="formacoes" class="formacoes">
+        <!-- COMO FUNCIONA -->
+        <section id="como-funciona" class="como-funciona">
+
+            <div class="section-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span>COMO FUNCIONA</span>
+                <span class="eyebrow-line"></span>
+            </div>
 
             <div class="container">
 
                 <h2 class="section-title">
-                    Formação
+                    Do primeiro contato ao site no ar
                 </h2>
 
-                <div class="formacoes__grid">
+                <div class="process">
 
-                    <article class="formation-card">
-                        <h3>MBA</h3>
-                        <p>Busco como especialização para a minha área de atuação em logística a Liderança e Gestão de
-                            Pessoas</p>
+                    <article class="process-step">
+
+                        <div class="process-icon">
+                            <i class="fa-regular fa-lightbulb"></i>
+                        </div>
+
+                        <div class="process-content">
+                            <span class="process-label">
+                                Conte sua ideia
+                            </span>
+
+                            <p>
+                                Vamos montar o site ideal para você
+                                a partir das suas inspirações.
+                            </p>
+                        </div>
+
                     </article>
 
-                    <article class="formation-card">
-                        <h3>Tecnólogo</h3>
-                        <p>Formado em 2025 pela instituição de ensino superior Estácio, venho trabalhando na área e
-                            aplicando meus conehcimentos em técnologia para trazer soluções para qos desafios diários.
-                        </p>
+
+                    <div class="process-line"></div>
+
+
+                    <article class="process-step">
+
+                        <div class="process-icon">
+                            <i class="fa-solid fa-file-pen"></i>
+                        </div>
+
+                        <div class="process-content">
+                            <span class="process-label">
+                                Nasce seu projeto
+                            </span>
+
+                            <p>
+                                Você recebe um briefing do seu site
+                                para visualizar como ele deve ficar
+                                e prosseguir para a finalização.
+                            </p>
+                        </div>
+
                     </article>
 
-                    <article class="formation-card">
-                        <h3>Desenvolvimento Web</h3>
-                        <p>Minha paixão por desenvolvimento e tecnologia me levou ao estudo de HTML, CSS e JavaScript
-                            assim como outras linguagens e tecnologia.</p>
+
+                    <div class="process-line"></div>
+
+
+                    <article class="process-step">
+
+                        <div class="process-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+
+                        <div class="process-content">
+                            <span class="process-label">
+                                Ajustes finais
+                            </span>
+
+                            <p>
+                                Nesta etapa, realizamos os últimos ajustes
+                                e informamos o prazo para a conclusão.
+                            </p>
+                        </div>
+
                     </article>
+
+
+                    <div class="process-line"></div>
+
+
+                    <article class="process-step">
+
+                        <div class="process-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <div class="process-content">
+                            <span class="process-label">
+                                Seu site no ar
+                            </span>
+
+                            <p>
+                                Pronto! Seu site está no ar,
+                                preparado para trazer novos clientes.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- VALORES -->
+        <section id="valores" class="valores">
+
+            <div class="section-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span>INVISTA NO SEU NEGÓCIO</span>
+                <span class="eyebrow-line"></span>
+            </div>
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Soluções para cada momento
+                </h2>
+
+                <p class="section-description">
+                    Escolha a opção que melhor atende ao momento do seu negócio.
+                    Todos os projetos são desenvolvidos pensando em apresentar
+                    sua marca e transformar visitantes em clientes.
+                </p>
+
+                <div class="pricing-grid">
+
+                    <!-- LANDING PAGE BÁSICA -->
+
+                    <article class="pricing-card">
+
+                        <div class="pricing-header">
+
+                            <span class="pricing-tag">
+                                PARA COMEÇAR
+                            </span>
+
+                            <h3>
+                                Landing Page Básica
+                            </h3>
+
+                            <p>
+                                Uma página profissional, objetiva e focada
+                                em apresentar seu negócio e gerar contatos.
+                            </p>
+
+                        </div>
+
+                        <div class="pricing-price">
+
+                            <span class="pricing-currency">
+                                R$
+                            </span>
+
+                            <strong>
+                                499
+                            </strong>
+
+                            <span class="pricing-period">
+                                pagamento único
+                            </span>
+
+                        </div>
+
+                        <ul class="pricing-list">
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Página única responsiva
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Design personalizado
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Integração com WhatsApp
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Formulário de contato
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Otimização para celular
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Publicação do site
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                30 dias de garantia
+                            </li>
+
+                        </ul>
+
+                        <a href="#contato" class="pricing-button">
+                            Quero minha landing page
+                        </a>
+
+                    </article>
+
+
+                    <!-- INSTITUCIONAL -->
+
+                    <article class="pricing-card featured">
+
+                        <span class="pricing-popular">
+                            MAIS COMPLETO
+                        </span>
+
+                        <div class="pricing-header">
+
+                            <span class="pricing-tag">
+                                PARA CRESCER
+                            </span>
+
+                            <h3>
+                                Landing Page Institucional
+                            </h3>
+
+                            <p>
+                                Uma presença digital completa para empresas
+                                que precisam apresentar seus serviços,
+                                diferenciais e fortalecer sua marca.
+                            </p>
+
+                        </div>
+
+                        <div class="pricing-price">
+
+                            <span class="pricing-currency">
+                                R$
+                            </span>
+
+                            <strong>
+                                899
+                            </strong>
+
+                            <span class="pricing-period">
+                                pagamento único
+                            </span>
+
+                        </div>
+
+                        <ul class="pricing-list">
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Estrutura completa de apresentação
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Design personalizado
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Seções personalizadas
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Integração com WhatsApp
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Formulário de contato
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Otimização para dispositivos móveis
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Estrutura preparada para SEO
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Publicação do site
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                30 dias de garantia
+                            </li>
+
+                        </ul>
+
+                        <a href="#contato" class="pricing-button">
+                            Quero meu site
+                        </a>
+
+                    </article>
+
+
+                    <!-- MANUTENÇÃO -->
+
+                    <article class="pricing-card">
+
+                        <div class="pricing-header">
+
+                            <span class="pricing-tag">
+                                PARA CONTINUAR
+                            </span>
+
+                            <h3>
+                                Manutenção
+                            </h3>
+
+                            <p>
+                                Mantenha seu site atualizado, funcionando
+                                corretamente e pronto para acompanhar
+                                o crescimento do seu negócio.
+                            </p>
+
+                        </div>
+
+                        <div class="pricing-price">
+
+                            <span class="pricing-currency">
+                                R$
+                            </span>
+
+                            <strong>
+                                99
+                            </strong>
+
+                            <span class="pricing-period">
+                                / mês
+                            </span>
+
+                        </div>
+
+                        <ul class="pricing-list">
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Atualização de textos
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Atualização de imagens
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Correções de problemas
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Pequenos ajustes no layout
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Suporte técnico
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                Acompanhamento do site
+                            </li>
+
+                        </ul>
+
+                        <a href="#contato" class="pricing-button">
+                            Quero manutenção
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CTA FINAL -->
+        <section id="cta-final" class="cta-final">
+
+            <div class="container">
+
+                <div class="cta-content">
+
+                    <span class="cta-eyebrow">
+                        SEU PROJETO PODE COMEÇAR AGORA
+                    </span>
+
+                    <h2>
+                        Sua página pode estar pronta ainda hoje.
+                    </h2>
+
+                    <p>
+                        Tá esperando o quê? Conte sua ideia e veja como
+                        podemos transformar suas inspirações em um site
+                        profissional.
+                    </p>
+
+                    <a href="#contato" class="cta-button">
+                        Quero começar meu projeto
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="cta-badges">
+
+                    <div class="cta-badge">
+
+                        <div class="cta-badge-icon">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                        </div>
+
+                        <div>
+                            <strong>Preview grátis</strong>
+                            <span>Veja antes de decidir</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cta-badge">
+
+                        <div class="cta-badge-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+
+                        <div>
+                            <strong>Pronta no mesmo dia</strong>
+                            <span>Agilidade para seu negócio</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="cta-badge">
+
+                        <div class="cta-badge-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <strong>30 dias de garantia</strong>
+                            <span>Você não fica sozinho</span>
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -480,36 +849,75 @@
 
             <div class="container">
 
-                <h2 class="section-title">
-                    Contato
-                </h2>
+                <div class="section-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    <span>VAMOS CONVERSAR</span>
+                    <span class="eyebrow-line"></span>
+                </div>
 
-                <div class="contato__cards">
+                <div class="contato-header">
+                    <h2 class="section-title">
+                        Vamos tirar sua ideia do papel?
+                    </h2>
+
+                    <p>
+                        Me conte o que você precisa e vamos conversar sobre a melhor
+                        solução para o seu projeto.
+                    </p>
+                </div>
+
+                <div class="contato-cards">
 
                     <a href="https://wa.me/5521965494558?text=Olá%20Marco!%20Encontrei%20seu%20portfólio%20e%20gostaria%20de%20obter%20mais%20informações%20sobre%20os%20serviços%20que%20você%20realiza.%20Poderia%20me%20apresentar%20as%20soluções%20disponíveis%20e%20como%20funciona%20o%20processo%20de%20contratação?"
                         class="contact-card whatsapp-contact" target="_blank" rel="noopener noreferrer">
-                        <div class="title">
-                            <img src="assets/img/social-media/whatsapp-icon.png" alt="whatsapp-icon">
+
+                        <div class="contact-icon">
+                            <img src="assets/img/social-media/whatsapp-icon.png" alt="WhatsApp">
+                        </div>
+
+                        <div class="contact-info">
+                            <span>Fale comigo</span>
                             <h3>WhatsApp</h3>
+                            <p>Converse diretamente comigo e tire suas dúvidas.</p>
                         </div>
-                        <p>Entre em contato diretamente comigo</p>
+
+                        <i class="fa-solid fa-arrow-right contact-arrow"></i>
+
                     </a>
 
-                    <a href="https://www.linkedin.com/in/marcoquintela/" class="contact-card">
-                        <div class="title">
-                            <img src="assets/img/social-media/linkedin-icon.png" alt="linkedin-icon">
+
+                    <a href="https://www.linkedin.com/in/marcoquintela/" class="contact-card" target="_blank"
+                        rel="noopener noreferrer">
+
+                        <div class="contact-icon">
+                            <img src="assets/img/social-media/linkedin-icon.png" alt="LinkedIn">
+                        </div>
+
+                        <div class="contact-info">
+                            <span>Conheça meu trabalho</span>
                             <h3>LinkedIn</h3>
+                            <p>Veja minha experiência profissional e projetos.</p>
                         </div>
-                        <p>https://www.linkedin.com/in/marcoquintela/</p>
+
+                        <i class="fa-solid fa-arrow-right contact-arrow"></i>
+
                     </a>
 
-                    <a href="" class="contact-card">
-                        <div class="title">
-                            <img src="assets/img/social-media/comercial-icon.png" alt="linkedin-icon">
-                            <h3>Contato</h3>
+
+                    <a href="mailto:quintelamarco94@gmail.com" class="contact-card">
+
+                        <div class="contact-icon">
+                            <img src="assets/img/social-media/comercial-icon.png" alt="E-mail">
                         </div>
-                        <p>+55 (21) 96549-4558</p>
-                        <p>quintelamarco94@gmail.com</p>
+
+                        <div class="contact-info">
+                            <span>Envie uma mensagem</span>
+                            <h3>E-mail</h3>
+                            <p>Para propostas, dúvidas ou informações sobre projetos.</p>
+                        </div>
+
+                        <i class="fa-solid fa-arrow-right contact-arrow"></i>
+
                     </a>
 
                 </div>
@@ -523,26 +931,92 @@
     <!-- FOOTER -->
     <footer class="footer">
 
-        <div class="container footer__container">
+        <div class="container">
 
-            <div>
-                <h3>Marco Quintela</h3>
-                <p>
-                    Desenvolvimento Web, UX/UI e soluções digitais.
-                </p>
+            <div class="footer-main">
+
+                <!-- Marca -->
+                <div class="footer-brand">
+
+                    <h3>Marco Quintela</h3>
+
+                    <p>
+                        Desenvolvimento de sites e soluções digitais
+                        para empresas, profissionais e negócios que querem
+                        fortalecer sua presença online.
+                    </p>
+
+                </div>
+
+
+                <!-- Navegação -->
+                <div class="footer-column">
+
+                    <h4>Navegação</h4>
+
+                    <a href="#home">Início</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#como-funciona">Como funciona</a>
+                    <a href="#valores">Valores</a>
+                    <a href="#contato">Contato</a>
+
+                </div>
+
+
+                <!-- Serviços -->
+                <div class="footer-column">
+
+                    <h4>Soluções</h4>
+
+                    <a href="#valores">Landing Pages</a>
+                    <a href="#valores">Sites Institucionais</a>
+                    <a href="#valores">Manutenção de Sites</a>
+
+                </div>
+
+
+                <!-- Contato -->
+                <div class="footer-column">
+
+                    <h4>Contato</h4>
+
+                    <a href="mailto:quintelamarco94@gmail.com">
+                        quintelamarco94@gmail.com
+                    </a>
+
+                    <a href="https://wa.me/5521965494558" target="_blank" rel="noopener noreferrer">
+                        WhatsApp
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/marcoquintela/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+
+                </div>
+
             </div>
 
-            <nav class="footer__nav">
 
-                <a href="#home">Início</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
+            <div class="footer-bottom">
 
-            </nav>
+                <span>
+                    © 2026 Marco Quintela. Todos os direitos reservados.
+                </span>
 
-            <div class="footer__copy">
-                © 2026 Marco Quintela.
-                Todos os direitos reservados.
+                <div class="footer-legal">
+
+                    <a href="politica-privacidade.html">
+                        Política de Privacidade
+                    </a>
+
+                    <span>•</span>
+
+                    <a href="#">
+                        Termos de Uso
+                    </a>
+
+                </div>
+
             </div>
 
         </div>
