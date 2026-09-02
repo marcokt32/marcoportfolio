@@ -944,7 +944,7 @@ section {
 
     scroll-behavior: smooth;
 
-    padding-bottom: 10px;
+    padding: 2.5rem;
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -1009,6 +1009,14 @@ section {
     overflow: hidden;
 
     flex-shrink: 0;
+
+    /* Define quais propriedades vão animar e o tempo (0.3 segundos) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.phone-card:hover {
+    -webkit-box-shadow: 0px 0px 30px 20px rgba(102, 0, 255, 0.5);
+    transform: translateY(-10px);
 }
 
 /* Área que realmente rola */
@@ -1665,16 +1673,18 @@ section {
 
     .phone-card {
         width: 90%;
-        height: 70vh;
+        height: 65vh;
+    }
+
+
+    .carousel-track {
+        padding: 1rem;
     }
 
     .prev,
     .next {
         display: none;
     }
-}
-
-@media (max-width: 768px) {
 
     .hero {
         min-height: 80vh;
