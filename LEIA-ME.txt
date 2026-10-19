@@ -1,0 +1,27 @@
+MARSDEV — FASE 1: FUNDAÇÃO DE SEO
+
+Arquivos de substituição e adição:
+- index.html: título/descrição SEO, canonical, Open Graph, dados estruturados básicos e H1 mais abrangente.
+- about.html: metadados próprios e H1 descritivo.
+- contato.html: metadados próprios e noindex para não competir com páginas comerciais.
+- obrigado.html: noindex para evitar indexação da página de confirmação.
+- politica-de-privacidade.html: política adequada ao formulário e ao site MarsDev, com H1 e metadados próprios.
+- assets/css/privacidade.css: estilos da política de privacidade.
+- assets/css/contato.css e assets/js/*: arquivos necessários ao formulário atualizado.
+- robots.txt e sitemap.xml: arquivos para rastreamento e descoberta de páginas públicas.
+
+COMO APLICAR
+1. Faça backup do repositório atual.
+2. Copie o conteúdo desta pasta para a raiz do repositório, preservando as subpastas assets/css e assets/js.
+3. Substitua os arquivos de mesmo nome e adicione os arquivos novos.
+4. Não remova o arquivo CNAME nem pastas/arquivos existentes que não estejam neste pacote.
+5. Publique as alterações no GitHub Pages.
+6. Depois da publicação, abra https://marsdev.com.br/robots.txt e https://marsdev.com.br/sitemap.xml para confirmar que estão acessíveis.
+7. No Google Search Console, envie https://marsdev.com.br/sitemap.xml e inspecione a página inicial e /about.html.
+
+OBSERVAÇÕES
+- O sitemap contém apenas páginas públicas principais e canônicas; formulário e agradecimento não entram no sitemap.
+- contato.html e obrigado.html usam noindex,follow. O robô ainda pode rastreá-las, mas elas não devem aparecer nos resultados de pesquisa.
+- A página de privacidade foi ajustada para explicar o formulário atual, o encaminhamento opcional ao WhatsApp e o uso de ferramentas Google. Revise o texto conforme as práticas reais e os requisitos legais do seu negócio.
+- A oferta “prévia inicial gratuita” e a garantia de 30 dias foram mantidas porque aparecem na comunicação atual. Confirme que as condições e o escopo estão claros ao visitante.
+- A implementação não garante indexação nem posicionamento. Search Console e rastreamento devem ser conferidos depois da publicação.
