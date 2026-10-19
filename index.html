@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Criação de Sites e Landing Pages | MarsDev</title>
-        <meta name="description" content="Desenvolvimento de sites, landing pages e soluções web para empresas e profissionais. Conheça projetos, valores e solicite uma proposta ao MarsDev.">
+    <title>Criação de Sites e Landing Pages | MarsDev</title>
+    <meta name="description"
+        content="Desenvolvimento de sites, landing pages e soluções web para empresas e profissionais. Conheça projetos, valores e solicite uma proposta ao MarsDev.">
     <!-- SEO METADATA START -->
     <meta name="robots" content="index,follow,max-image-preview:large">
     <link rel="canonical" href="https://marsdev.com.br/">
@@ -13,7 +14,8 @@
     <meta property="og:site_name" content="MarsDev">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:title" content="Criação de Sites e Landing Pages | MarsDev">
-    <meta property="og:description" content="Desenvolvimento de sites, landing pages e soluções web para empresas e profissionais. Conheça projetos, valores e solicite uma proposta ao MarsDev.">
+    <meta property="og:description"
+        content="Desenvolvimento de sites, landing pages e soluções web para empresas e profissionais. Conheça projetos, valores e solicite uma proposta ao MarsDev.">
     <meta property="og:url" content="https://marsdev.com.br/">
     <meta property="og:image" content="https://marsdev.com.br/assets/img/hero/hero.png">
     <!-- SEO METADATA END -->
@@ -64,6 +66,7 @@
 </head>
 
 <body>
+    <canvas id="tech-trail"></canvas>
 
     <!-- HEADER -->
     <header class="header">
@@ -103,6 +106,19 @@
             </div>
 
             <div class="hero-overlay"></div>
+
+            <!-- Cole isto dentro da sua seção Hero -->
+            <div class="tech-hero-bg-container">
+                <div class="tech-hero-hologram">
+                    <div class="holo-content">
+                        <!-- O ícone será inserido dinamicamente aqui -->
+                        <div class="holo-icon"></div>
+                        <span class="holo-text">SYSTEM_GROWTH // ACTIVE</span>
+                    </div>
+                    <div class="holo-scanlines"></div>
+                </div>
+            </div>
+
 
             <div class="container hero-container">
 
@@ -916,8 +932,8 @@
 
                 <div class="contato-cards">
 
-                    <a href="./contato.html"
-                        class="contact-card whatsapp-contact" target="_blank" rel="noopener noreferrer">
+                    <a href="./contato.html" class="contact-card whatsapp-contact" target="_blank"
+                        rel="noopener noreferrer">
 
                         <div class="contact-icon">
                             <img src="assets/img/social-media/whatsapp-icon.png" alt="WhatsApp">
@@ -1072,14 +1088,14 @@
 
     </footer>
     <!-- BOTÃO FLUTUANTE WHATSAPP -->
-    <a href="./contato.html"
-        class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale comigo pelo WhatsApp">
+    <a href="./contato.html" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Fale comigo pelo WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
-
 </body>
 <script src="./assets/js/header.js"></script>
 <script src="./assets/js/carousel.js"></script>
 <script src="./assets/js/wppcontact.js"></script>
+<script src="./assets/js/cursor-trail.js"></script>
 
 </html>

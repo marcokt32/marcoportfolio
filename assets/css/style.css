@@ -1641,11 +1641,9 @@ section {
     border-radius: 24px;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--surface-contrast-light),
-            var(--surface-contrast)
-        );
+            var(--surface-contrast));
 
     border: 1px solid var(--border);
 
@@ -1730,11 +1728,9 @@ section {
     border-radius: 16px;
 
     background:
-        linear-gradient(
-            135deg,
+        linear-gradient(135deg,
             var(--surface-contrast-light),
-            var(--surface-contrast)
-        );
+            var(--surface-contrast));
 
     border: 1px solid var(--border);
 }
@@ -1767,12 +1763,12 @@ section {
     border-radius: 18px;
 
     background:
-        rgba(255,255,255,.03);
+        rgba(255, 255, 255, .03);
 
     border: 1px solid var(--border);
 }
 
-.resume-item + .resume-item {
+.resume-item+.resume-item {
     margin-top: 18px;
 }
 
@@ -2093,7 +2089,7 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 
     animation: whatsapp-pulse 2s infinite;
-    
+
     transition: transform 0.2s ease;
 }
 
@@ -2256,7 +2252,7 @@ section {
     line-height: 1.5;
 }
 
-.knowledge-card > p {
+.knowledge-card>p {
     margin-bottom: 18px;
     color: var(--text-secondary);
     line-height: 1.7;
@@ -2298,7 +2294,7 @@ section {
     line-height: 1.7;
 }
 
-.course-details li + li {
+.course-details li+li {
     margin-top: 7px;
 }
 
@@ -2445,3 +2441,146 @@ section {
         text-align: center;
     }
 }
+
+#tech-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    /* Permite clicar nos elementos atrás do rastro */
+    z-index: 9999;
+    /* Fica por cima do site. Mude para -1 se quiser como fundo */
+}
+
+
+/* IMPORTANTE: A sua classe do Hero precisa ter position: relative */
+.sua-classe-do-hero {
+    position: relative;
+    overflow: hidden;
+    /* Evita que o brilho do holograma crie barra de rolagem */
+}
+
+/* Container que joga o holograma para o lado direito do fundo */
+.tech-hero-bg-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    /* Ajuste aqui para afastar ou aproximar da borda direita */
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Garante que o usuário consiga clicar em qualquer coisa na frente dele */
+    z-index: 0;
+    /* Fica atrás do seu texto e botões (que devem ter z-index maior, ex: 1 ou 2) */
+    opacity: 0.25;
+    /* Opacidade sutil de fundo. Aumente se quiser ele mais destacado (ex: 0.5) */
+}
+
+/* Elemento do Holograma */
+.tech-hero-hologram {
+    position: relative;
+    width: 320px;
+    /* Tamanho do elemento no fundo */
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fc4c00;
+    padding: 20px;
+    background: rgba(252, 76, 0, 0.01);
+    border: 1px solid rgba(252, 76, 0, 0.1);
+    border-radius: 50%;
+    /* Formato circular de projeção */
+    box-shadow: inset 0 0 30px rgba(252, 76, 0, 0.05);
+}
+
+/* Efeito de Glitch e Brilho Neon */
+.holo-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    filter: drop-shadow(0 0 8px rgba(252, 76, 0, 0.6)) drop-shadow(0 0 20px rgba(252, 76, 0, 0.2));
+    animation: hero-holo-flicker 0.2s infinite, hero-holo-glitch 5s infinite linear;
+}
+
+
+.holo-content svg {
+    width: 140px;
+    height: 140px;
+}
+
+.holo-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Linhas de Varredura Estática (Scanlines) */
+.holo-scanlines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(rgba(252, 76, 0, 0) 50%, rgba(252, 76, 0, 0.08) 50%);
+    background-size: 100% 4px;
+}
+
+/* Canvas do Rastro do Mouse */
+#tech-trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    /* Sempre no topo de tudo */
+}
+
+
+
+/* Animações de Interferência Cibernética */
+@keyframes hero-holo-flicker {
+    0% {
+        opacity: 0.90;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.85;
+    }
+}
+
+@keyframes hero-holo-glitch {
+
+    0%,
+    93%,
+    97%,
+    100% {
+        transform: translate(0, 0) skewX(0deg);
+        filter: hue-rotate(0deg);
+    }
+
+    94% {
+        transform: translate(-6px, 3px) skewX(15deg);
+        filter: hue-rotate(30deg) saturate(1.5);
+    }
+
+    95% {
+        transform: translate(6px, -3px) skewX(-15deg);
+    }
+
+    96% {
+        transform: translate(-2px, -2px) scaleY(1.05);
+    }
+}
+
