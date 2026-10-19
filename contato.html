@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conte um pouco sobre seu projeto e solicite uma proposta de desenvolvimento web.">
+  <meta name="theme-color" content="#08111f">
+  <title>Conte sobre seu projeto | Marco Quintela</title>
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700&family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/contato.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10942914304"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-10942914304');
+    gtag('config', 'G-H9WVT78905');
+  </script>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="./index.html" aria-label="Voltar ao site">← Voltar ao site</a>
+    <section class="panel">
+      <p class="eyebrow">VAMOS CONVERSAR SOBRE SUA IDEIA</p>
+      <h1>Conte sobre seu <span>projeto.</span></h1>
+      <p class="intro">Preencha os dados abaixo para organizar o primeiro contato. Ao enviar, você poderá continuar a conversa pelo WhatsApp com uma mensagem já preparada.</p>
+      <form id="project-form">
+        <div class="field">
+          <label for="name">Seu nome <span aria-hidden="true">*</span></label>
+          <input id="name" name="name" autocomplete="name" required maxlength="100" placeholder="Como podemos chamar você?">
+        </div>
+        <div class="field">
+          <label for="business">Nome da empresa ou negócio</label>
+          <input id="business" name="business" autocomplete="organization" maxlength="120" placeholder="Se ainda não tiver, pode deixar em branco">
+        </div>
+        <div class="field">
+          <label for="service">O que você precisa? <span aria-hidden="true">*</span></label>
+          <select id="service" name="service" required>
+            <option value="" selected disabled>Selecione uma opção</option>
+            <option>Landing page</option>
+            <option>Site institucional</option>
+            <option>Manutenção ou atualização de site</option>
+            <option>Automação ou aplicação web</option>
+            <option>Ainda preciso de orientação</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="goal">Conte um pouco sobre o projeto <span aria-hidden="true">*</span></label>
+          <textarea id="goal" name="goal" rows="4" required maxlength="1200" placeholder="Qual é o objetivo do site ou da solução? Já tem domínio, referências ou prazo em mente?"></textarea>
+        </div>
+        <div class="field">
+          <label for="budget">Faixa de investimento (opcional)</label>
+          <select id="budget" name="budget">
+            <option value="Prefiro conversar antes" selected>Prefiro conversar antes</option>
+            <option>Até R$ 500</option>
+            <option>R$ 500 a R$ 1.000</option>
+            <option>R$ 1.000 a R$ 2.000</option>
+            <option>Acima de R$ 2.000</option>
+          </select>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent" required> <span>Autorizo o uso destas informações para responder à minha solicitação, conforme a <a href="./politica-de-privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a>.</span></label>
+        <button type="submit">Continuar para o WhatsApp <span aria-hidden="true">→</span></button>
+        <p class="note">O formulário não envia mensagens automaticamente. Ao continuar, o WhatsApp será aberto para você revisar e enviar a mensagem.</p>
+      </form>
+    </section>
+    <footer>Marco Quintela · Desenvolvimento Web e Automação</footer>
+  </main>
+  <script src="./assets/js/contato.js"></script>
+</body>
+</html>
